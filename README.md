@@ -32,8 +32,11 @@ Step 7: Training Classification Models
 The code proceeds to train four different classification models using the training data:
 
 Support Vector Machine (SVM): The code initializes an SVM classifier (clf_svm) with a linear kernel and trains it using the fit method, passing the training features (x_train) and the encoded target variable (y_train). The classifier's performance is evaluated using the score method on the testing data, and the accuracy score is stored in svm_score.
+
 Naive Bayes: The code initializes a Gaussian Naive Bayes classifier (clf_nb) and trains it using the fit method. Similarly, the accuracy score is calculated and stored in nb_score.
+
 K-Nearest Neighbors: The code initializes a K-Nearest Neighbors classifier (clf_knn) and trains it using the fit method. The accuracy score is calculated and stored in knn_score.
+
 Decision Tree: The code initializes a Decision Tree classifier (tree) and trains it using the fit method. However, before training, the predictions from the SVM, Naive Bayes, and K-Nearest Neighbors models on the training data are combined into a new DataFrame called model_predictions_train. This combined data serves as input to the Decision Tree classifier.
 
 
